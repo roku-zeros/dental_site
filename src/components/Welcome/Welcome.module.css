@@ -1,0 +1,8 @@
+.welcome_wrapper {
+ background: no-repeat center/100% url("../../assets/images/welcome-bg.jpg");
+ border-radius: 0 0 20% 20%;
+}
+
+.welcome_wrapper image {
+ width: 100%;
+}
