@@ -1,4 +1,5 @@
 import React from "react";
+
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -7,14 +8,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import { expand } from "./menu";
-import { menuItems } from './menu';
-import logo from '../../assets/images/logo.svg'
+import { items } from './items';
+import logo from '../../assets/images/logo.svg';
 
-const Menu = () => {
+
+const expand = 'md'
+
+const MyNavbar = () => {
     return (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3">
-            <Container fluid>
+            <Container>
                 <Navbar.Brand href="#">
                     <img src={logo}/>
                 </Navbar.Brand>
@@ -31,7 +34,7 @@ const Menu = () => {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
-                            {menuItems.map((item, idx) => (
+                            {items.map((item, idx) => (
                                 <Nav.Link href={item.link}>{item.title}</Nav.Link>
                             ))}
                         </Nav>
@@ -42,4 +45,4 @@ const Menu = () => {
     );
 };
 
-export default Menu;
+export default MyNavbar;

@@ -1,6 +1,4 @@
-export const expand = 'md'
-
-export const menuItems = [
+export const items = [
     {
         'title': 'Главная',
         'link': '/',

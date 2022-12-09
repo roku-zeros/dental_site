@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Menu from "./components/Menu/Menu";
+import MyNavbar from "./components/MyNavbar/MyNavbar";
+import Home from './pages/Home/index'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,7 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
     return (
         <Router>
-            <Menu/>
+            <MyNavbar />
+            <Routes>
+                <Route index path='/' element={<Home />} />
+            </Routes>
         </Router>
     );
 }
