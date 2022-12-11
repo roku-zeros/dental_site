@@ -1,0 +1,14 @@
+.blue {
+    color: #0089FF !important;
+}
+
+.grey {
+    color: #3D3D3FAB !important;
+}
+
+.white_wrapper {
+    width: fit-content;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px;
+}

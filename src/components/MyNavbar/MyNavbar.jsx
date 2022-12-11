@@ -10,13 +10,14 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import { items } from './items';
 import logo from '../../assets/images/logo.svg';
+import styles from './MyNavbar.module.css'
 
 
 const expand = 'md'
 
 const MyNavbar = () => {
     return (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} expand={expand} className="mb-3 my_nav fixed-top">
             <Container>
                 <Navbar.Brand href="#">
                     <img src={logo}/>
@@ -35,7 +36,7 @@ const MyNavbar = () => {
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
                             {items.map((item, idx) => (
-                                <Nav.Link href={item.link}>{item.title}</Nav.Link>
+                                <Nav.Link href='#'>{item.title}</Nav.Link>
                             ))}
                         </Nav>
                     </Offcanvas.Body>

@@ -1,19 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
-  margin: 0;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-h1 {
-  font-size: 86px;
-  font-weight: bold;
-  color: #0089FF;
+/* Phone version */
+@media (min-width: 0px) and (max-width: 576px) {
+    h1 {
+        font-size: 24px !important;
+        font-weight: 600 !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+        font-weight: 500 !important;
+    }
+
+    p, span {
+        font-size: 14px !important;;
+        font-weight: 400 !important;;
+    }
+}
+
+/* Fabled version */
+@media (min-width: 576px) and (max-width: 1630px) {
+    h1 {
+        font-size: 62px !important;
+        font-weight: 700 !important;;
+    }
+
+    h2 {
+        font-size: 32px !important;
+        font-weight: 600 !important;
+    }
+
+    p, span {
+        font-size: 16px !important;;
+        font-weight: 500 !important;;
+    }
+}
+
+/* PC version */
+@media (min-width: 1630px) {
+    h1 {
+        font-size: 80px !important;
+        font-weight: 700 !important;;
+    }
+
+    h2 {
+        font-size: 40px !important;
+        font-weight: 600 !important;
+    }
+
+    p, span {
+        font-size: 18px !important;;
+        font-weight: 500 !important;;
+    }
 }

@@ -4,6 +4,7 @@ import MyNavbar from "./components/MyNavbar/MyNavbar";
 import Home from './pages/Home/index'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css'
 
 
 function App() {
