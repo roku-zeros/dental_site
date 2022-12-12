@@ -16,3 +16,16 @@
     border-radius: 16px;
     padding: 20px;
 }
+
+@media (min-width: 0px) and (max-width: 576px) {
+    .phone_hide {
+        visibility: hidden;
+    }
+
+    .white_wrapper {
+        width: fit-content;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        padding: 0 !important;
+    }
+}

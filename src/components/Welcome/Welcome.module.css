@@ -14,14 +14,10 @@
 
 .welcome_text {
     position: relative;
-    margin-top: 3% !important;
-    width: 70%;
 }
 
 .welcome_content {
     position: relative;
-    top: 20%;
-    width: 100%;
 }
 
 .enroll_btns {
@@ -32,4 +28,55 @@
     padding: 12px 6px;
     background-color: #F0EFEF;
     color: #8C8B8C;
+    border-radius: 8px;
+}
+
+.welcome_wrapper a {
+    all: unset;
+}
+
+/* Phone version */
+@media (min-width: 0px) and (max-width: 576px) {
+    .welcome_text {
+        margin-top: -40px !important;
+        width: 70%;
+    }
+
+    .welcome_content{
+        position: absolute !important;
+        top: 40%;
+        width: 90%;
+        border-radius: 16px;
+        border: 1px solid #0089FF;
+        background-color: #FFFFFF;
+        padding: 20px;
+
+        margin-top: 100px;
+    }
+}
+
+/* Fabled version */
+@media (min-width: 576px) and (max-width: 1630px) {
+    .welcome_text {
+        margin-top: 3% !important;
+        width: 70%;
+    }
+
+    .welcome_content {
+        top: 20%;
+        width: 100%;
+    }
+}
+
+/* PC version */
+@media (min-width: 1630px) {
+    .welcome_text {
+        margin-top: 3% !important;
+        width: 70%;
+    }
+
+    .welcome_content {
+        top: 20%;
+        width: 100%;
+    }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,8 +11,19 @@ import logo from '../../assets/images/logo.svg';
 const expand = 'md'
 
 const MyNavbar = () => {
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () =>{
+        if(window.scrollY >= 80){
+            setColorchange(true);
+        }
+        else{
+            setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
+
     return (
-        <Navbar key={expand} expand={expand} className="mb-3 my_nav fixed-top">
+        <Navbar key={expand} expand={expand} className={colorChange ? 'navbar colorChange' + ' ' + 'mb-3 my_nav fixed-top bg-light': 'navbar' + ' ' + 'mb-3 my_nav fixed-top'}>
             <Container>
                 <Navbar.Brand href="#">
                     <img src={logo}/>

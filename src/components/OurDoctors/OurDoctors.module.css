@@ -39,3 +39,7 @@
 .centered_text {
     text-align: center;
 }
+
+.cards_wrapper {
+    padding: 60px 10%;
+}

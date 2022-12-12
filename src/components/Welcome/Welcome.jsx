@@ -12,7 +12,7 @@ const Welcome = () => {
             <Container>
                 <div className={styles.welcome_text}>
                     <h1 className={baseStyles.blue}>Красивая улыбка меняет Всё!</h1>
-                    <p className={baseStyles.grey}>Самое качественное обслуживание<br/>
+                    <p className={baseStyles.grey + ' ' + baseStyles.phone_hide}>Самое качественное обслуживание<br/>
                         <span className={baseStyles.blue}>
                              с нашими опытными врачами
                          </span>
@@ -26,12 +26,14 @@ const Welcome = () => {
                                     получи бесплатную диагностику зубов
                                 </span>
                         </p>
-                        <div className={styles.enroll_btns}>
-                            <a href="tel:1-562-867-5309">Click to Call!</a>
-                            <Button>
-                                Записаться
-                            </Button>
-                        </div>
+                        <Stack direction="horizontal" gap={3}>
+                            <a href='#'>
+                                <Button variant="outline-primary">+996 226 262 626</Button>
+                            </a>
+                            <a href='#'>
+                                <Button>Записаться</Button>
+                            </a>
+                        </Stack>
                     </div>
                 </div>
             </Container>
