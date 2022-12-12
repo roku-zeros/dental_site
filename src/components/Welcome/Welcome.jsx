@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import {Row, Col, Stack, Card} from "react-bootstrap";
 
-import WelcomeDoctor from '../../assets/images/welcome-bg.png'
 import styles from './Welcome.module.css'
 import baseStyles from '../../index.module.css'
 import Button from "react-bootstrap/Button";

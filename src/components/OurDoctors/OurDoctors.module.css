@@ -1,0 +1,41 @@
+.our_doctors {
+    position: relative;
+    background: linear-gradient(360deg, rgba(8, 227, 255, 1) 0%, rgba(87, 153, 247, 1) 100%);
+}
+
+
+/* Phone version */
+@media (min-width: 0px) and (max-width: 576px) {
+    .our_doctors {
+        top: 80px;
+        left: 0;
+        padding: 30px;
+    }
+}
+
+/* Fabled version */
+@media (min-width: 576px) and (max-width: 1630px) {
+    .our_doctors {
+        top: 120px;
+        left: 0;
+        padding: 60px;
+    }
+}
+
+/* PC version */
+@media (min-width: 1630px) {
+    .our_doctors {
+        top: 160px;
+        left: 0;
+        padding: 90px;
+    }
+}
+
+.doctors_tittle {
+    display: table;
+    margin: 0 auto;
+}
+
+.centered_text {
+    text-align: center;
+}

@@ -6,6 +6,10 @@
     color: #3D3D3FAB !important;
 }
 
+.white {
+    color: #FFFFFF !important;
+}
+
 .white_wrapper {
     width: fit-content;
     background-color: #FFFFFF;

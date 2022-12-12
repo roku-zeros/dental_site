@@ -1,16 +1,11 @@
 import React from "react";
-
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import { items } from './items';
 import logo from '../../assets/images/logo.svg';
-import styles from './MyNavbar.module.css'
 
 
 const expand = 'md'
@@ -30,7 +25,7 @@ const MyNavbar = () => {
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                            Offcanvas
+                            <img src={logo}/>
                         </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
