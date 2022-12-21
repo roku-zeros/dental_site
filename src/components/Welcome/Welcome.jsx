@@ -23,7 +23,7 @@ const Welcome = () => {
                     <div className={baseStyles.white_wrapper}>
                         <p className={baseStyles.grey}>Запишись на консультацию и <br/>
                             <span className={baseStyles.blue}>
-                                    получи бесплатную диагностику зубов
+                                    получи
                                 </span>
                         </p>
                         <Stack direction="horizontal" gap={3}>

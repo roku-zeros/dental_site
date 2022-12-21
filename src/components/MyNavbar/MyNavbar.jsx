@@ -13,7 +13,7 @@ const expand = 'md'
 const MyNavbar = () => {
     const [colorChange, setColorchange] = useState(false);
     const changeNavbarColor = () =>{
-        if(window.scrollY >= 80){
+        if(window.scrollY >= 10){
             setColorchange(true);
         }
         else{
@@ -42,7 +42,7 @@ const MyNavbar = () => {
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
                             {items.map((item, idx) => (
-                                <Nav.Link href='#'>{item.title}</Nav.Link>
+                                <Nav.Link href={item.link}>{item.title}</Nav.Link>
                             ))}
                         </Nav>
                     </Offcanvas.Body>

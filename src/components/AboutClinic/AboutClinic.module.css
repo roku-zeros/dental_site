@@ -1,0 +1,30 @@
+.about_clinic_wrapper {
+    position: relative;
+    width: 100%;
+
+    padding-top: calc(20px);
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.img_wrapper {
+    height: 400px;
+    background: no-repeat url("../../assets/images/rectangle.svg");
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.img_wrapper img {
+    height: 400px;
+    float: right;
+}
+
+.about_text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

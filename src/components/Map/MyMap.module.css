@@ -1,0 +1,16 @@
+.my_map {
+    position: relative;
+    top: 150px
+}
+
+.map_wrapper{
+    background-color: #e0eaee;
+    padding: 40px;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.map_wrapper div {
+    margin-left: auto;
+    margin-right: auto;
+}

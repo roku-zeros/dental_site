@@ -3,5 +3,6 @@
 }
 
 .colorChange {
-    background-color: #FFFFFF;
+    background-color: rgba(117, 207, 240, 0.11);
+    opacity: 0.1%;
 }

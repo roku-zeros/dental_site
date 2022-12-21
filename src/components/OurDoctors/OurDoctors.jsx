@@ -32,53 +32,20 @@ const OurDoctors = () => {
                     {doctorsFour.map((doctor, idx) => (
                         <Carousel.Item className={styles.cards_wrapper}>
                             <Row>
-                                <Col md={6}>
-                                    <Stack direction="horizontal" gap={3}>
-                                        <Card style={{width: '100%'}}>
-                                            <Card.Img variant="top" src={photo}/>
-                                            <Card.Body>
-                                                <Card.Title>{doctor[0].name}</Card.Title>
-                                                <Card.Text>
-                                                    {doctor[0].role}
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                        <Card style={{width: '100%'}}>
-                                            <Card.Img variant="top" src={photo}/>
-                                            <Card.Body>
-                                                <Card.Title>{doctor[1].name}</Card.Title>
-                                                <Card.Text>
-                                                    {doctor[1].role}
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Stack>
-                                </Col>
-                                <Col md={6}>
-                                    <Stack direction="horizontal" gap={3}>
-                                        <Card style={{width: '100%'}}>
-                                            <Card.Img variant="top" src={photo}/>
-                                            <Card.Body>
-                                                <Card.Title>{doctor[0].name}</Card.Title>
-                                                <Card.Text>
-                                                    {doctor[0].role}
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                        <Card style={{width: '100%'}}>
-                                            <Card.Img variant="top" src={photo}/>
-                                            <Card.Body>
-                                                <Card.Title>{doctor[0].name}</Card.Title>
-                                                <Card.Text>
-                                                    {doctor[0].role}
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Stack>
-                                </Col>
-                            </Row>
+                                <Stack direction="horizontal" gap={3}>
+                                    <Card style={{width: '25%'}}>
+                                        <Card.Img variant="top" src={photo}/>
+                                        <Card.Body>
+                                            <Card.Title>{doctor[0].name}</Card.Title>
+                                            <Card.Text>
+                                                {doctor[0].role}
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Stack>
+                        </Row>
                         </Carousel.Item>
-                    ))}
+                        ))}
                 </Carousel>
             </Container>
         </div>

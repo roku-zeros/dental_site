@@ -5,14 +5,10 @@ export const items = [
     },
     {
         'title': 'О нас',
-        'link': '/',
+        'link': '/about-us',
     },
     {
         'title': 'Услуги',
-        'link': '/',
-    },
-    {
-        'title': 'Наши врачи',
-        'link': '/',
+        'link': '/services',
     },
 ]
